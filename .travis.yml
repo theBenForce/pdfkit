@@ -16,6 +16,7 @@ jobs:
       script: gulp build
       before_deploy:
         - cd dist
+        - npm install
       deploy:
         provider: npm
         email: "$NPM_EMAIL"
