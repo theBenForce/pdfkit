@@ -1,5 +1,5 @@
 {
-  "name": "pdfkit",
+  "name": "pdfkit2",
   "description": "A PDF generation library for Node.js",
   "keywords": [
     "pdf",
@@ -9,18 +9,23 @@
     "document",
     "vector"
   ],
-  "version": "0.8.3",
-  "homepage": "http://pdfkit.org/",
-  "author": {
-    "name": "Devon Govett",
-    "email": "devongovett@gmail.com",
-    "url": "http://badassjs.com/"
-  },
+  "version": "2.0.0",
+  "contributors": [
+    {
+      "name": "Ben Force",
+      "email": "benforce@gmail.com"
+    },
+    {
+      "name": "Devon Govett",
+      "email": "devongovett@gmail.com",
+      "url": "http://badassjs.com/"
+    }
+  ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/devongovett/pdfkit.git"
+    "url": "https://github.com/theBenForce/pdfkit2.git"
   },
-  "bugs": "http://github.com/devongovett/pdfkit/issues",
+  "bugs": "http://github.com/theBenForce/pdfkit2/issues",
   "devDependencies": {
     "blob-stream": "^0.1.2",
     "brace": "^0.2.1",
