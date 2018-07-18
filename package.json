@@ -49,8 +49,6 @@
     "png-js": ">=0.1.0"
   },
   "scripts": {
-    "prepare": "gulp build",
-    "postpublish": "make clean",
     "test": "jest"
   },
   "main": "js/document",
