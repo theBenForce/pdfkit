@@ -1,3 +1,11 @@
 language: node_js
 node_js:
-  - "stable"
+- stable
+deploy:
+  provider: npm
+  email: benforce@gmail.com
+  api_key:
+    secure: SKjyps0x1nfv95kS+axamkdoIY5e+ksY0NnYIYpfOV4PQbdZ4f9tAIbMzrghDG+vPHiSb2ixj6yTULdZPyJXkQywQy4i2mSD+/wR5POmEb5rMEVNDBMfyv4pd1GRJsoDA1wwQuW4WNq0xBYvXYk6qEa8j7yb7RaOfjmicROayehnk9px1KTbx388dg9R0O+2E78v8j7n5pUQiICNCYVo19874yQlSBIghSf/3SZ5mJLcdTSuaWdBY1xncxql6AlOQhjWEgDjglkTAYaaLi1vvVmh7m6T6uNyo6INk00veByBHANs4cgklT+JS8d8xJGYFiz7Wam8VuCF74J6Z9Kq9z0nH2r4tWgtV8hE+P5W99ofXeN776bHIvsSYLi2+GpA7WhMrZc4wNOrOh3mz8FyQ0GdH+LnnOU+Akmt9VSmGXmCL5jqZLKs6ntq5EMGz0sdvxDGSUP2jwJ77e7YcblfeXsyYGleHGlKVcT3ZmB3eAxRXSQ+PRaAQOwx65eAsHjEjW2MsK5NUQOT9JJRw1/XL0gGbjBMpkDGg3aowz3g25LA+LViXbzW/IHpSCPoZXD9cbhglM8OB1fEZpaxN+x1sBx1KZI/yNf6/X/6O6WzSX8Yyp1ta4LmTpBxTliXu71YxSo/+Ll+jZgQrUS7QwruDKD4awh/Y2mG3M/hYWRWfn0=
+  on:
+    tags: true
+    repo: theBenForce/pdfkit2
