@@ -13,7 +13,7 @@ gulp.task("fonts", function() {
 
 gulp.task("static", function() {
   gulp
-    .src(["./lib/**/*.js", "package.json", "package-lock.json"])
+    .src(["./lib/**/*.js", "package.json", "package-lock.json", ".npmignore"])
     .pipe(gulp.dest(destination));
 });
 
