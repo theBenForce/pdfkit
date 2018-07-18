@@ -1,8 +1,9 @@
 var gulp = require("gulp");
 var coffee = require("gulp-coffee");
 const path = require("path");
+const rename = require("gulp-rename");
 
-const destination = "js";
+const destination = "dist";
 
 gulp.task("fonts", function() {
   gulp
@@ -10,8 +11,10 @@ gulp.task("fonts", function() {
     .pipe(gulp.dest(path.join(destination, "font", "data")));
 });
 
-gulp.task("js", function() {
-  gulp.src("./lib/**/*.js").pipe(gulp.dest(destination));
+gulp.task("static", function() {
+  gulp
+    .src(["./lib/**/*.js", "package.json", "package-lock.json"])
+    .pipe(gulp.dest(destination));
 });
 
 gulp.task("coffee", function() {
@@ -21,4 +24,11 @@ gulp.task("coffee", function() {
     .pipe(gulp.dest(destination));
 });
 
-gulp.task("build", ["fonts", "js", "coffee"]);
+gulp.task("index", () => {
+  gulp
+    .src("./index.dist.js")
+    .pipe(rename("index.js"))
+    .pipe(gulp.dest(destination));
+});
+
+gulp.task("build", ["fonts", "static", "coffee"]);

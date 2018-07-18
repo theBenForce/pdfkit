@@ -7,4 +7,6 @@ docs/
 playground/
 __tests__/
 gulpfile.js
+.travis.yml
+Makefile
 index.js
