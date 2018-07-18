@@ -79,6 +79,7 @@ class PDFDocument extends stream.Readable
   mixin require './mixins/images'
   mixin require './mixins/annotations'
   mixin require './mixins/outline'
+  mixin require './mixins/metadata'
 
   addPage: (options = @options) ->
     # end the current page if needed
