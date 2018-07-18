@@ -60,5 +60,6 @@
   },
   "engine": [
     "node >= v0.10.0"
-  ]
+  ],
+  "license": "MIT"
 }
