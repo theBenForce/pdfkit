@@ -48,7 +48,7 @@
     "png-js": ">=0.1.0"
   },
   "scripts": {
-    "prepublish": "make js",
+    "prepare": "gulp build",
     "postpublish": "make clean",
     "test": "jest"
   },
