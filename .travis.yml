@@ -15,6 +15,8 @@ jobs:
       if: tag IS present
       node_js: "8"
       script: gulp build
+      before_deploy:
+        - cd dist
       deploy:
         provider: npm
         email: "$NPM_EMAIL"
