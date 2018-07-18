@@ -9,7 +9,7 @@
     "document",
     "vector"
   ],
-  "version": "2.0.7",
+  "version": "2.0.8",
   "contributors": [
     {
       "name": "Ben Force",
@@ -49,8 +49,6 @@
     "png-js": ">=0.1.0"
   },
   "scripts": {
-    "prepare": "gulp build",
-    "postpublish": "make clean",
     "test": "jest"
   },
   "main": "js/document",
